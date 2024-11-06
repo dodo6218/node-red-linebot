@@ -1,0 +1,10 @@
+{
+    "name": "node-red-project",
+    "version": "0.0.1",
+    "description": "A Node-RED Project",
+    "private": true,
+    "scripts": {
+      "start": "node app.js"
+    }
+  }
+  
