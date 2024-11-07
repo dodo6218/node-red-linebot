@@ -1,0 +1,40 @@
+[
+    {
+        "id": "1",
+        "type": "http in",
+        "z": "1",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 100,
+        "wires": [["2"]]
+    },
+    {
+        "id": "2",
+        "type": "function",
+        "z": "1",
+        "name": "Hello World",
+        "func": "msg.payload = \"Hello, World!\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 100,
+        "wires": [["3"]]
+    },
+    {
+        "id": "3",
+        "type": "http response",
+        "z": "1",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 470,
+        "y": 100,
+        "wires": []
+    }
+]
